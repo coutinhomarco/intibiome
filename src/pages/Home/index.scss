@@ -1,0 +1,7 @@
+@use 'src/styles/common';
+
+
+.home {
+    @extend %flex-row-center;
+    flex-direction: column;
+}

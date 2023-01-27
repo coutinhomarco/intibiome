@@ -2,4 +2,43 @@
 
 .home-header {
     @extend %flex-row-center;
+    flex-direction: column;
+    main {
+        @extend %flex-row-center;
+        justify-content: space-between;
+        width: 70vw;
+        img {
+            margin: auto;
+        }
+    }
+}
+
+.header-navbar {
+    @extend %flex-row-center;
+    width: 100vw;
+    height: 49px;
+    background: var(--unnamed-color-389cd6) 0% 0% no-repeat padding-box;
+    background: #389CD6 0% 0% no-repeat padding-box;
+    color: white;
+    .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: red;
+    }
+    a {
+        width: 190px;
+        margin: 0 20px;
+        color: white;
+        text-decoration: none;
+        &:not(.contactus-anchor):hover {
+          ~ .sub-menu {
+                @extend %flex-row-center;
+                width: 100vw;
+                height: 49px;
+                top: 49+79px;
+                background: #9D8E8E 0% 0% no-repeat padding-box;
+                text-align: left;
+            }   
+        }
+    }
 }
