@@ -1,8 +1,23 @@
-import './styles/index.scss';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+import Home from './pages/Home/index';
+import ErrorPage from './pages/ErrorPage/index';
+import './App.scss';
+
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+      errorElement: <ErrorPage />,
+    },
+  ]);
+
   return (
     <div className="App">
-      <h1>HELLO WORLD</h1>
+      <RouterProvider router={router} />
     </div>
   );
 }
