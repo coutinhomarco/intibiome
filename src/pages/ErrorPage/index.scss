@@ -1,0 +1,6 @@
+@use 'src/styles/common';
+
+#error-page {
+    @extend %flex-row-center;
+    flex-direction: column;
+}
