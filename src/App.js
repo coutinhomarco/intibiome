@@ -1,10 +1,20 @@
-import './styles/index.scss';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 import Home from './pages/Home/index';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+    },
+  ]);
+
   return (
     <div className="App">
-      <Home />
+      <RouterProvider router={router} />
     </div>
   );
 }
