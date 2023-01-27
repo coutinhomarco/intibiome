@@ -3,10 +3,15 @@
 .home-header {
     @extend %flex-row-center;
     flex-direction: column;
+    #company-logo {
+        height: 65px;
+        width: 162.5px
+    }
     main {
         @extend %flex-row-center;
         justify-content: space-between;
         width: 70vw;
+        height: 80px;
         img {
             margin: auto;
         }
@@ -17,25 +22,30 @@
     @extend %flex-row-center;
     width: 100vw;
     height: 49px;
+    letter-spacing: 0.32px;
     background: var(--unnamed-color-389cd6) 0% 0% no-repeat padding-box;
     background: #389CD6 0% 0% no-repeat padding-box;
     color: white;
     .sub-menu {
-        display: none;
+        opacity: 0;
         position: absolute;
-        background-color: red;
+        height: 49px;
+        top: 49+79px;
+        width: 100vw;
+    }
+    .sub-menu:hover {
+        opacity: 1;
     }
     a {
         width: 190px;
         margin: 0 20px;
         color: white;
         text-decoration: none;
+        text-align: center;
         &:not(.contactus-anchor):hover {
           ~ .sub-menu {
                 @extend %flex-row-center;
-                width: 100vw;
-                height: 49px;
-                top: 49+79px;
+                opacity: 1;
                 background: #9D8E8E 0% 0% no-repeat padding-box;
                 text-align: left;
             }   

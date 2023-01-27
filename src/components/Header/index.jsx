@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="home-header">
       <main>
-        <img alt="company logo" role="presentation" src={headerImg} />
+        <img id="company-logo" alt="company logo" role="presentation" src={headerImg} />
         <SearchOutlined />
       </main>
       <nav className="header-navbar">
