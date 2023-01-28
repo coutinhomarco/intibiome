@@ -21,12 +21,12 @@ export default function Header() {
         break;
     }
     const subMenuElement = document.querySelector('.sub-menu');
-    subMenuElement.style.opacity = '1';
+    subMenuElement.classList.replace('is-inactive', 'is-active');
   };
 
   const onLeave = () => {
     const subMenuElement = document.querySelector('.sub-menu');
-    subMenuElement.style.opacity = '0';
+    subMenuElement.classList.replace('is-active', 'is-inactive');
   };
 
   return (
@@ -52,7 +52,7 @@ export default function Header() {
           <DownOutlined />
         </a>
         <a className="contactus-anchor" href="#contactus">contact us</a>
-        <section className="sub-menu">
+        <section className="sub-menu is-inactive">
           <nav>
             {
               subMenuText.map((text) => (<a href={`#${text}`}>{text}</a>))

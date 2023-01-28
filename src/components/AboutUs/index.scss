@@ -4,16 +4,12 @@
     flex-direction: column;
     text-align: center;
     h1 {
-        font: normal normal bold 39px/50px Trebuchet MS;
-        letter-spacing: 0.78px;
-        color: #389CD6;
-        margin-top: 80px;
-        margin-bottom: 40px;
+        @extend %h1-font;
+        font-size: 39px;
     }
     p {
+        @extend %p-font;
         width: 550px;
-        color: #7B7070;
-        letter-spacing: 0.4px;
     }
     img {
         margin-top: 40px;
