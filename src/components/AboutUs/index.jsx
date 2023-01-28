@@ -4,7 +4,7 @@ import './index.scss';
 
 export default function index() {
   return (
-    <section id="aboutus" className="about-us">
+    <section id="brand-philosophy" className="about-us">
       <h1>we’re here to help</h1>
       <p>
         When it comes to caring for our most intimate areas, we’ve lost our connection.

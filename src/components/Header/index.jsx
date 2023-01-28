@@ -28,7 +28,7 @@ export default function Header() {
     const subMenuElement = document.querySelector('.sub-menu');
     subMenuElement.classList.replace('is-active', 'is-inactive');
   };
-
+  const serializeString = (str) => str.replace(' ', '-').toLowerCase();
   return (
     <header className="home-header">
       <main>
@@ -55,7 +55,10 @@ export default function Header() {
         <section className="sub-menu is-inactive">
           <nav>
             {
-              subMenuText.map((text) => (<a key={text} href={`#${text}`}>{text}</a>))
+              subMenuText.map((text) => {
+                const serializedText = serializeString(text);
+                return <a key={serializedText} href={`#${serializedText}`}>{text}</a>;
+              })
             }
           </nav>
         </section>

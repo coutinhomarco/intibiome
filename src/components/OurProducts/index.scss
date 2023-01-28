@@ -15,9 +15,24 @@
     }
 }
 
-.our-products-h1 {
+#our-products-h1 {
     margin-top: 120px;
     margin-bottom: 80px;
+}
+
+.our-products-section {
+    @extend %flex-row-center;
+    flex-direction: column;
+    width: 100%;
+    h1 {
+        @extend %h1-font;
+        font-size: 39px;
+        width: 50%;
+    }
+    p {
+        @extend %p-font;
+        width: 50%;
+    }
 }
 
 .products-section {
