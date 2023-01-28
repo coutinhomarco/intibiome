@@ -7,7 +7,7 @@ import headerImg from '../../assets/Header/headerImg.png';
 export default function Header() {
   const [subMenuText, setSubMenuText] = useState(['']);
   const onHover = ({ target }) => {
-    switch (target.text) {
+    switch (target.textContent) {
       case 'about us ':
         setSubMenuText(['brand philosophy', 'product technology']);
         break;
@@ -36,22 +36,22 @@ export default function Header() {
         <SearchOutlined />
       </main>
       <nav onMouseLeave={onLeave} className="header-navbar">
-        <a onMouseEnter={onHover} href="#aboutus">
+        <p onMouseEnter={onHover}>
           about us
           {' '}
           <DownOutlined />
-        </a>
-        <a onMouseEnter={onHover} href="#ourproducts">
+        </p>
+        <p onMouseEnter={onHover}>
           our products
           {' '}
           <DownOutlined />
-        </a>
-        <a onMouseEnter={onHover} href="#intimatehealth">
+        </p>
+        <p onMouseEnter={onHover}>
           intimate health
           {' '}
           <DownOutlined />
-        </a>
-        <a className="contactus-anchor" href="#contactus">contact us</a>
+        </p>
+        <p className="contactus-anchor">contact us</p>
         <section className="sub-menu is-inactive">
           <nav>
             {

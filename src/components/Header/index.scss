@@ -34,12 +34,11 @@
         width: 100vw;
         background: #9D8E8E 0% 0% no-repeat padding-box;
     }
+    p {
+        @extend %header-nav-bar;
+    }
     a {
-        width: 190px;
-        margin: 0 20px;
-        color: white;
-        text-decoration: none;
-        text-align: center;
+        @extend %header-nav-bar;
     }
 }
 
