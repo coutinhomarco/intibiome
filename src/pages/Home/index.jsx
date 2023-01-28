@@ -4,6 +4,7 @@ import AboutUs from '../../components/AboutUs';
 import OurProducts from '../../components/OurProducts';
 import './index.scss';
 import bannerHero from '../../assets/Home/banner-hero.png';
+import secondBannerHero from '../../assets/Home/Asset 22.png';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <AboutUs />
         <OurProducts />
+        <img loading="lazy" alt="care for intimate microbiome" src={secondBannerHero} />
       </main>
     </div>
   );

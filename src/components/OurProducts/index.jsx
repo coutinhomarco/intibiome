@@ -6,7 +6,7 @@ import './index.scss';
 
 export default function index() {
   return (
-    <section className="our-products">
+    <section id="ourproducts" className="our-products">
       <h1>
         whatever your age. whatever your lifestyle. whatever your interests.
       </h1>
@@ -21,21 +21,21 @@ export default function index() {
       <h1 id="our-products-h1">our products</h1>
       <section className="products-section">
         <div>
-          <img alt="intibiome wellness daily intimate wash" src={firstProduct} />
+          <img loading="lazy" alt="intibiome wellness daily intimate wash" src={firstProduct} />
           <p>intibiome wellness daily intimate wash</p>
           <div id="wellness">
             <p>wellness</p>
           </div>
         </div>
         <div>
-          <img alt="intibiome active extra protection intimate wash" src={secondProduct} />
+          <img loading="lazy" alt="intibiome active extra protection intimate wash" src={secondProduct} />
           <p>intibiome active extra protection intimate wash</p>
           <div id="active">
             <p>active</p>
           </div>
         </div>
         <div>
-          <img alt="intibiome agecare dryness relief intimate wash" src={thirdProduct} />
+          <img loading="lazy" alt="intibiome agecare dryness relief intimate wash" src={thirdProduct} />
           <p>intibiome agecare dryness relief intimate wash</p>
           <div id="age-care">
             <p>age-care</p>

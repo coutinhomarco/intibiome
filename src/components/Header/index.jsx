@@ -55,7 +55,7 @@ export default function Header() {
         <section className="sub-menu is-inactive">
           <nav>
             {
-              subMenuText.map((text) => (<a href={`#${text}`}>{text}</a>))
+              subMenuText.map((text) => (<a key={text} href={`#${text}`}>{text}</a>))
             }
           </nav>
         </section>
