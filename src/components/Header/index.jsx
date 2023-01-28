@@ -1,31 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.scss';
-import {
-  DownOutlined,
-  SearchOutlined,
-} from '@ant-design/icons';
+import { DownOutlined, SearchOutlined } from '@ant-design/icons';
 
 import headerImg from '../../assets/Header/headerImg.png';
 
 export default function Header() {
+  const [subMenuText, setSubMenuText] = useState(['']);
+  const onHover = ({ target }) => {
+    switch (target.text) {
+      case 'about us ':
+        setSubMenuText(['brand philosophy', 'product technology']);
+        break;
+      case 'our products ':
+        setSubMenuText(['all products', 'intibiome wellness', 'intibiome active', 'intibiome agecare']);
+        break;
+      case 'intimate health ':
+        setSubMenuText(['article1', 'article2', 'article3', 'faq']);
+        break;
+      default:
+        break;
+    }
+    const subMenuElement = document.querySelector('.sub-menu');
+    subMenuElement.style.opacity = '1';
+  };
+
+  const onLeave = () => {
+    const subMenuElement = document.querySelector('.sub-menu');
+    subMenuElement.style.opacity = '0';
+  };
+
   return (
     <header className="home-header">
       <main>
         <img id="company-logo" alt="company logo" role="presentation" src={headerImg} />
         <SearchOutlined />
       </main>
-      <nav className="header-navbar">
-        <a href="#aboutus">
+      <nav onMouseLeave={onLeave} className="header-navbar">
+        <a onMouseEnter={onHover} href="#aboutus">
           about us
           {' '}
           <DownOutlined />
         </a>
-        <a href="#ourproducts">
+        <a onMouseEnter={onHover} href="#ourproducts">
           our products
           {' '}
           <DownOutlined />
         </a>
-        <a href="#intimatehealth">
+        <a onMouseEnter={onHover} href="#intimatehealth">
           intimate health
           {' '}
           <DownOutlined />
@@ -33,8 +54,9 @@ export default function Header() {
         <a className="contactus-anchor" href="#contactus">contact us</a>
         <section className="sub-menu">
           <nav>
-            <a href="#aboutus">lorem</a>
-            <a href="#aboutus">lorem</a>
+            {
+              subMenuText.map((text) => (<a href={`#${text}`}>{text}</a>))
+            }
           </nav>
         </section>
       </nav>

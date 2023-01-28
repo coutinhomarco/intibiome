@@ -27,14 +27,13 @@
     background: #389CD6 0% 0% no-repeat padding-box;
     color: white;
     .sub-menu {
+        @extend %flex-row-center;
         opacity: 0;
         position: absolute;
         height: 49px;
         top: 49+79px;
         width: 100vw;
-    }
-    .sub-menu:hover {
-        opacity: 1;
+        background: #9D8E8E 0% 0% no-repeat padding-box;
     }
     a {
         width: 190px;
@@ -42,13 +41,13 @@
         color: white;
         text-decoration: none;
         text-align: center;
-        &:not(.contactus-anchor):hover {
-          ~ .sub-menu {
-                @extend %flex-row-center;
-                opacity: 1;
-                background: #9D8E8E 0% 0% no-repeat padding-box;
-                text-align: left;
-            }   
-        }
+        // &:not(.contactus-anchor):hover {
+        //   ~ .sub-menu {
+        //         @extend %flex-row-center;
+        //         opacity: 1;
+        //         background: #9D8E8E 0% 0% no-repeat padding-box;
+        //         text-align: left;
+        //     }   
+        // }
     }
 }
