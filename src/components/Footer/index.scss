@@ -1,0 +1,26 @@
+@use '../../styles/common';
+
+.footer {
+    @extend %flex-row-center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #389CD6 0% 0% no-repeat padding-box;
+    height: 242px;
+    width: 100vw;
+    margin-top: 120px;
+    section {
+        @extend %flex-row-center;
+        width: 60%;
+        justify-content: space-between;
+    }
+    span {
+        text-align: center;
+        font: normal normal bold 16px/22px Trebuchet MS;
+        letter-spacing: 0.32px;
+        color: #FFFFFF;
+        padding: 0 10px;
+        &:not(:last-child) {
+            border-right: 1px solid #FFFFFF;
+        }
+    }
+}

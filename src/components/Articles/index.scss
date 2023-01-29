@@ -1,0 +1,42 @@
+@use '../../styles/common.scss';
+
+.articles {
+    @extend %flex-row-center;
+    flex-direction: column;
+    h1 {
+        @extend %h1-font;
+    }
+    button {
+        background: #389CD6 0% 0% no-repeat padding-box;
+        border-radius: 16px;
+        width: 356px;
+        height: 64px;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+        text-transform: lowercase;
+        font-size: 20px;
+        outline: 0px;
+    }
+    .articles-container {
+        margin: auto;
+        width: 80%;
+        @extend %flex-row-center;
+        flex-wrap: wrap;
+        gap: 33px;
+        justify-content: space-between;
+        margin-bottom: 85px;
+        .article {
+            @extend %flex-row-center;
+            width: 357px;
+            flex-direction: column;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 16px #00000014;
+            border-radius: 16px;
+        }
+        p {
+            @extend %p-font;
+            width: 80%;
+            text-align: center;
+        }
+    }
+}

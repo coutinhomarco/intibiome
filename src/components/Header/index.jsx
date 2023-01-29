@@ -28,6 +28,7 @@ export default function Header() {
     const subMenuElement = document.querySelector('.sub-menu');
     subMenuElement.classList.replace('is-active', 'is-inactive');
   };
+
   const serializeString = (str) => str.replace(' ', '-').toLowerCase();
   return (
     <header className="home-header">
