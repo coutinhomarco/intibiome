@@ -4,16 +4,20 @@
 .home {
     @extend %flex-row-center;
     flex-direction: column;
-    & > img {
-        @extend %img-size;
-        width: 100vw;
-        object-fit: contain;
-    }
-    & > main {
+    & > picture {
         & > img {
             @extend %img-size;
             width: 100vw;
-            margin-bottom: 120px;
+            object-fit: contain;
+        }
+    }
+    & > main {
+        & > picture {
+            & > img {
+                @extend %img-size;
+                width: 100vw;
+                margin-bottom: 120px;
+            }
         }
     }
 }
