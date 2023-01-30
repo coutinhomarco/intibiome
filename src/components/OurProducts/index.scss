@@ -16,6 +16,9 @@
 }
 
 #our-products-h1 {
+    @extend %h1-font;
+    font-size: 39px;
+    width: 50%;
     margin-top: 120px;
     margin-bottom: 80px;
 }
@@ -24,11 +27,6 @@
     @extend %flex-row-center;
     flex-direction: column;
     width: 100%;
-    h1 {
-        @extend %h1-font;
-        font-size: 39px;
-        width: 50%;
-    }
     p {
         @extend %p-font;
         width: 50%;
@@ -40,17 +38,13 @@
     flex-wrap: wrap;
     gap: 33px;
     margin-bottom: 100px;
-    & > div:hover {
-        transform: scale(1.02);
-        box-shadow: 0px 5px 19px #00000014;
-    }
-    div {
+    & > div {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 3px 16px #00000014;
         border-radius: 16px;
         text-align: center;
         p {
-            width: 80%;
+            width: 70%;
             margin: auto;
             margin-bottom: 32px;
             margin-top: 16px;
@@ -70,5 +64,40 @@
         @extend %flex-row-center;
         @extend %product-bottom-div;
         background: #EE6381 0% 0% no-repeat padding-box;
+    }
+}
+@media screen and (max-width: 500px) {
+    .our-products-section {
+        overflow-y: hidden;
+        width: 100vw;
+    }
+    .products-section {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        margin-left: 590px;
+        & > div {
+            width: 300px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            p {
+                width: 100%;
+                font-size: 12px;
+            }
+            & > img{
+                width: 100%;
+            }
+        }
+    }
+    .our-products-section {
+        width: 100vw
+    }
+}
+@media screen and (min-width: 501px) {
+    .products-section {
+        & > div:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 5px 19px #00000014;
+        }
     }
 }

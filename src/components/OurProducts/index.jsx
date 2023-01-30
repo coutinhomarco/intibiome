@@ -18,8 +18,8 @@ export default function index() {
         As the experts in intimate hygiene, we want to bring discussion about intimate wellness care out
         of the dark and demystify the taboos that surround it.
       </p>
+      <h1 id="our-products-h1">our products</h1>
       <div id="all-products" className="our-products-section">
-        <h1 id="our-products-h1">our products</h1>
         <section className="products-section">
           <div id="intibiome-wellness">
             <img loading="lazy" alt="intibiome wellness daily intimate wash" src={firstProduct} />
