@@ -55,6 +55,12 @@ Para testar acesse:
 
 <br/>
 <h2>
+    Testes automatizados
+</h2>
+Escrevi alguns testes de renderização, testando se certas partes da aplicação estão funcionando como deviam.
+<br/>
+<br/>
+<h2>
     Uso de imagens
 </h2>
 Foi a primeira vez que tive contato com o Adobe XD, portanto não sei se por falta de experiência ou por não ser disponibilizado, só consegui acesso aos assets em formato PNG, o que acaba reduzindo a qualidade das imagens.
