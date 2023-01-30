@@ -44,6 +44,15 @@ $ npm start
 $ npm run test
 ```
 
+<h2>Aplicação na nuvem</h2>
+Essa aplicação possui um CI/CD para realizar deploy na Azure.
+Esse workflow utiliza do Github Actions e possui dependência do resultado dos testes, ou seja, caso haja falha, o deploy é cancelado.
+
+<br/>
+Para testar acesse:
+
+- [Intibiome](https://intibiome.azurewebsites.net/)
+
 <h2>Organização do projeto.</h2>
 A organização do projeto foi a seguinte:
 <br/>
