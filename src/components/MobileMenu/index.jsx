@@ -19,6 +19,7 @@ export default function index({ setIsOpen }) {
       <a onClick={onAnchorClick} href="#article2">article2</a>
       <a onClick={onAnchorClick} href="#article3">article3</a>
       <a onClick={onAnchorClick} href="#faq">faq</a>
+      <a onClick={onAnchorClick} href="#contact-us">contact us</a>
     </nav>
   );
 }
