@@ -37,11 +37,6 @@ $ npm install
 
 # Execute a aplicação em modo de desenvolvimento
 $ npm start
-
-
-# O projeto tem testes automatizados de renderização
-# Para rodar os testes
-$ npm run test
 ```
 
 <h2>Aplicação na nuvem</h2>
@@ -58,7 +53,12 @@ Para testar acesse:
     Testes automatizados
 </h2>
 Escrevi alguns testes de renderização, testando se certas partes da aplicação estão funcionando como deviam.
-<br/>
+
+```bash
+# O projeto tem testes automatizados de renderização
+# Para rodar os testes
+$ npm run test
+```
 <br/>
 <h2>
     Uso de imagens
