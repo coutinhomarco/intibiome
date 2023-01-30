@@ -48,6 +48,10 @@
         border-radius: 16px;
         text-align: center;
         width: 363px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
         p {
             width: 70%;
             margin: auto;
