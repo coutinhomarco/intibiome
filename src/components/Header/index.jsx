@@ -3,6 +3,7 @@ import './index.scss';
 import { DownOutlined, SearchOutlined } from '@ant-design/icons';
 
 import headerImg from '../../assets/Header/headerImg.png';
+import SandwichMenu from '../SandwichMenu';
 
 export default function Header() {
   const [subMenuText, setSubMenuText] = useState(['']);
@@ -33,8 +34,9 @@ export default function Header() {
   return (
     <header className="home-header">
       <main>
+        <SandwichMenu />
         <img id="company-logo" alt="company logo" role="presentation" src={headerImg} />
-        <SearchOutlined />
+        <SearchOutlined style={{ color: '#7B7070' }} />
       </main>
       <nav onMouseLeave={onLeave} className="header-navbar">
         <p onMouseEnter={onHover}>
