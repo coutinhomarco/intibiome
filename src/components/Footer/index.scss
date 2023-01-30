@@ -18,6 +18,9 @@
             }
         }
     }
+    hr {
+        display: none;
+    }
     span {
         text-align: center;
         font: normal normal bold 16px/22px Trebuchet MS;
@@ -26,6 +29,44 @@
         padding: 0 10px;
         &:not(:last-child) {
             border-right: 1px solid #FFFFFF;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .footer {
+        height: 768px;
+        nav {
+            font-size: 19px;
+            display: flex;
+            height: 442px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            & > a {
+                margin: 10px 0;
+            }
+
+        }
+        section {
+            display: flex;
+            flex-direction: column-reverse;
+            height: 350px;
+            justify-content: space-evenly;
+        }
+        span {
+            &:not(:last-child) {
+                border-right: 0;
+            }
+        }
+        hr {
+            display: block;
+            opacity: 1;
+            width: 24px;
+            color: white;
         }
     }
 }

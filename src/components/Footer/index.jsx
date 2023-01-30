@@ -6,12 +6,19 @@ import './index.scss';
 export default function index() {
   return (
     <footer className="footer">
+      {/* <hr> tag was only displayed on the mobile version --------
+      on the desktop version, border-right was used as the separator (with :not-last-child) */}
       <nav>
         <span>contact us</span>
+        <hr />
         <span>faq</span>
+        <hr />
         <span>site map</span>
+        <hr />
         <span>privacy policy</span>
+        <hr />
         <span>cookies policy</span>
+        <hr />
         <span>legal notice</span>
       </nav>
       <section>
