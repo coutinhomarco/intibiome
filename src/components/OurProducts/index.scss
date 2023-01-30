@@ -78,7 +78,8 @@
     .products-section {
         overflow-x: auto;
         flex-wrap: nowrap;
-        margin-left: 590px;
+        // margin-left: 590px;
+        margin: auto;
         & > div {
             width: 300px;
             margin-right: 20px;
