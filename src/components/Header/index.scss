@@ -33,6 +33,11 @@
         top: 49+79px;
         width: 100vw;
         background: #9D8E8E 0% 0% no-repeat padding-box;
+        & > nav {
+            & > a:hover {
+                font-weight: bold;
+            }
+        }
     }
     p {
         @extend %header-nav-bar;
@@ -49,3 +54,10 @@
 .is-inactive {
     opacity: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .header-navbar{
+        display: none;
+    }
+}
+    

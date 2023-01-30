@@ -9,9 +9,10 @@
     }
     p {
         @extend %p-font;
-        width: 550px;
+        width: 50%;
     }
     img {
+        @extend %img-size;
         margin-top: 40px;
         margin-bottom: 80px;
     }

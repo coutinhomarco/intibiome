@@ -12,6 +12,11 @@
         @extend %flex-row-center;
         width: 60%;
         justify-content: space-between;
+        & > a {
+            &:hover > img {
+                transform: scale(1.05);
+            }
+        }
     }
     span {
         text-align: center;

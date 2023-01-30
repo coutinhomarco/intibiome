@@ -10,15 +10,15 @@ export default function index() {
     <section className="articles">
       <h1>keep up to date with our discoveries</h1>
       <div className="articles-container">
-        <div className="article">
+        <div id="article1" className="article">
           <img loading="lazy" alt="article" src={article1} />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div className="article">
+        <div id="article2" className="article">
           <img loading="lazy" alt="article" src={article2} />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div className="article">
+        <div id="article3" className="article">
           <img loading="lazy" alt="article" src={article3} />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>

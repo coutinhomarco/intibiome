@@ -39,8 +39,11 @@
     @extend %flex-row-center;
     flex-wrap: wrap;
     gap: 33px;
-    justify-content: space-between;
     margin-bottom: 100px;
+    & > div:hover {
+        transform: scale(1.02);
+        box-shadow: 0px 5px 19px #00000014;
+    }
     div {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 3px 16px #00000014;
