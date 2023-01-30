@@ -45,7 +45,7 @@ A organização do projeto foi a seguinte:
 src
 ├── assets
 │   ├── Header
-│   │      └── imagens usadas no componente Header
+│   │      └── ...imagens
 │   │     
 │   ...
 ├── components
