@@ -4,6 +4,29 @@
     @extend %flex-row-center;
     flex-direction: column;
     margin: 0 30px;
+    .articles-container {
+        @extend %flex-row-center;
+        gap: 33px;
+        margin-bottom: 85px;
+        .article {
+            @extend %flex-row-center;
+            flex-direction: column;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 16px #00000014;
+            border-radius: 16px;
+        }
+        p {
+            @extend %p-font;
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+
+.outer-article-container {
+    @extend %flex-row-center;
+    flex-direction: column;
+    width: 100vw;
     h1 {
         @extend %h1-font;
     }
@@ -23,37 +46,52 @@
             font-size: 22px;
         }
     }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .articles {
+        overflow-y: hidden;
+        width: 100vw;
+        margin: 15px;
+    }
     .articles-container {
-        @extend %flex-row-center;
-        flex-wrap: wrap;
-        gap: 33px;
-        margin-bottom: 85px;
-        .article {
-            @extend %flex-row-center;
-            // width: 357px;
-            flex-direction: column;
-            background: #FFFFFF 0% 0% no-repeat padding-box;
-            box-shadow: 0px 3px 16px #00000014;
-            border-radius: 16px;
-        }
-        p {
-            @extend %p-font;
-            width: 80%;
-            text-align: center;
+        margin-bottom: 30px;
+        width: 1200px;
+        margin-left: 700px;
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .outer-article-container {
+        h1 {
+            margin: 15px;
+            font-size: 39px;
         }
     }
 }
-
-@media screen and (max-width: 768px) {
-    
-}
-@media screen and (max-width: 1004px) and (min-width: 769px) {
+@media screen and (max-width: 768px) and (min-width: 501px) {
     .articles {
-        h1 {
-            margin: 10px;
-            width: 70%;
-        }
         .articles-container {
+            flex-wrap: wrap;
+            .article {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+    
+@media screen and (max-width: 1004px) and (min-width: 769px) {
+    #articles-h1 {
+        margin: 10px;
+            width: 70%;
+    }
+    .articles {
+        .articles-container {
+            flex-wrap: wrap;
             .article {
                 img {
                     width: 100%;
@@ -71,12 +109,9 @@
             width: 100%;
         }
     }
-    .articles {
-        h1 {
-            margin: 10px;
-            width: 70%;
-        }
-        
+    #articles-h1 {
+        margin: 10px;
+        width: 70%;
     }
 }
 
@@ -87,11 +122,8 @@
             width: 100%;
         }
     }
-    .articles {
-        h1 {
-            margin: 10px;
-            width: 70%;
-        }
-        
+    #articles-h1 {
+        margin: 10px;
+        width: 70%;
     }
 }

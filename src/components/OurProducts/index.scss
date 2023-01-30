@@ -7,12 +7,16 @@
     h1 {
         @extend %h1-font;
         font-size: 39px;
-        width: 50%;
+        width: 65%;
     }
     p {
         @extend %p-font;
         width: 50%;
     }
+}
+
+#product-technology {
+    width: 100vw
 }
 
 #our-products-h1 {
