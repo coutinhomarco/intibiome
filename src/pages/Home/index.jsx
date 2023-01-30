@@ -6,10 +6,10 @@ import Articles from '../../components/Articles';
 import Footer from '../../components/Footer';
 import './index.scss';
 import bannerHero from '../../assets/Home/banner-hero@2x.png';
-import bannerHeroMobile from '../../assets/Home/banner-hero-mobile.png';
+import bannerHeroMobile from '../../assets/Home/banner-hero-mobile@2x.png';
 
 import secondBannerHero from '../../assets/Home/Asset 22@2x.png';
-import secondBannerHeroMobile from '../../assets/Home/banner-intibiome-05.png';
+import secondBannerHeroMobile from '../../assets/Home/banner-intibiome-05@2x.png';
 
 export default function Home() {
   return (
