@@ -57,7 +57,7 @@ Para testar acesse:
 <h2>
     Uso de imagens
 </h2>
-Foi a primeira vez que tive contato com o Adobe XD, portanto não sei se por falta de experiência ou por não ser disponibilizado, só consegui acesso aos assets em formato PNG, o que acaba piorando a resolução das imagens.
+Foi a primeira vez que tive contato com o Adobe XD, portanto não sei se por falta de experiência ou por não ser disponibilizado, só consegui acesso aos assets em formato PNG, o que acaba reduzindo a qualidade das imagens.
 <br/>
 <br/>
 <h2>Organização do projeto.</h2>
