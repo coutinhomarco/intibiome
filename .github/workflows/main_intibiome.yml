@@ -57,4 +57,4 @@ jobs:
           app-name: 'intibiome'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_35A9973FD90D4C39903BEF0605BCCDA1 }}
-          package: .
+          package: release.zip
