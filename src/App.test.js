@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event'
 import App from './App';
 import Articles from './components/Articles';
 
@@ -42,4 +43,13 @@ test('test if articles container render the 3 articles', async () => {
     render(<Articles />);
     const linkElement = await screen.getAllByRole('img');
     expect(linkElement).toHaveLength(3);
+});
+
+test('test if submenu displays when mouse hovers menu', async () => {
+    render(<App />);
+    const elementMenu = await screen.getAllByRole('navigation')[0];
+    const elementSubMenu = await screen.getAllByRole('navigation');
+    expect(elementMenu).toBeInTheDocument();
+    userEvent.hover(elementMenu)
+    expect(elementSubMenu[1]).toBeVisible();
 });
