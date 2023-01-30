@@ -11,6 +11,8 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 -   [React Router Dom](https://reactrouter.com/en/main)
 -   [Antd icons](https://ant.design/components/icon)
 -   [Azure](https://azure.microsoft.com/pt-br/)
+- [testing-library/react](https://testing-library.com/)
+- [Jest](https://jestjs.io/pt-BR/)
 
 <br>
 <h2>Instalar o projeto em sua máquina</h2>
@@ -35,6 +37,11 @@ $ npm install
 
 # Execute a aplicação em modo de desenvolvimento
 $ npm start
+
+
+# O projeto tem testes automatizados de renderização
+# Para rodar os testes
+$ npm run test
 ```
 
 <h2>Organização do projeto.</h2>
