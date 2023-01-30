@@ -57,9 +57,10 @@
         margin: 15px;
     }
     .articles-container {
+        width: 1300px;
+        // margin-left: 700px;
+        margin: auto;
         margin-bottom: 30px;
-        width: 1200px;
-        margin-left: 700px;
         flex-direction: row;
         overflow-x: auto;
         flex-wrap: nowrap;
