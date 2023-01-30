@@ -1,0 +1,129 @@
+@use '../../styles/common.scss';
+
+.articles {
+    @extend %flex-row-center;
+    flex-direction: column;
+    margin: 0 30px;
+    .articles-container {
+        @extend %flex-row-center;
+        gap: 33px;
+        margin-bottom: 85px;
+        .article {
+            @extend %flex-row-center;
+            flex-direction: column;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 16px #00000014;
+            border-radius: 16px;
+        }
+        p {
+            @extend %p-font;
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+
+.outer-article-container {
+    @extend %flex-row-center;
+    flex-direction: column;
+    width: 100vw;
+    h1 {
+        @extend %h1-font;
+    }
+    button {
+        background: #389CD6 0% 0% no-repeat padding-box;
+        border-radius: 16px;
+        width: 356px;
+        height: 64px;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+        font-size: 20px;
+        border: 0px;
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+            background: #3198d4 0% 0% no-repeat padding-box;
+            font-size: 22px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .articles {
+        overflow-y: hidden;
+        width: 100vw;
+        margin: 15px;
+    }
+    .articles-container {
+        margin-bottom: 30px;
+        width: 1200px;
+        margin-left: 700px;
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    .outer-article-container {
+        h1 {
+            margin: 15px;
+            font-size: 39px;
+        }
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 501px) {
+    .articles {
+        .articles-container {
+            flex-wrap: wrap;
+            .article {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+    
+@media screen and (max-width: 1004px) and (min-width: 769px) {
+    #articles-h1 {
+        margin: 10px;
+            width: 70%;
+    }
+    .articles {
+        .articles-container {
+            flex-wrap: wrap;
+            .article {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+    
+
+@media screen and (max-width: 1450px) and (min-width: 1005px) {
+    .article {
+        width: 300px;
+        img {
+            width: 100%;
+        }
+    }
+    #articles-h1 {
+        margin: 10px;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1451px) {
+    .article {
+        width: 357px;
+        img {
+            width: 100%;
+        }
+    }
+    #articles-h1 {
+        margin: 10px;
+        width: 70%;
+    }
+}
