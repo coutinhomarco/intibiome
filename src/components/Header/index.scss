@@ -20,6 +20,7 @@
 }
 
 .header-navbar {
+    cursor: pointer;
     @extend %flex-row-center;
     width: 100vw;
     height: 49px;
