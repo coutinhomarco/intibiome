@@ -36,3 +36,43 @@ $ npm install
 # Execute a aplicação em modo de desenvolvimento
 $ npm start
 ```
+
+<h2>Organização do projeto.</h2>
+A organização do projeto foi a seguinte:
+<br/>
+
+```bash
+src
+├── assets
+│   ├── Header
+│   │      └── imagens usadas no componente Header
+│   │     
+│   ...
+├── components
+│   ├── AboutUS
+│   │        ├── index.jsx
+│   │        └── index.scss
+│   ├── Header
+│   │        ├── index.jsx
+│   │        └── index.scss
+│   ├── OurProducts
+│   │        ├── index.jsx
+│   │        └── index.scss
+│    ...
+│ 
+├── pages
+│   ├── Home
+│   │    ├── index.jsx
+│   │    └── index.scss
+│   │
+│   └─ ErrorPage
+│        ├── index.jsx
+│        └── index.scss
+│    ...  
+│   
+├── styles
+│      └── common.scss
+└── README.md
+```
+Todas as pastas foram organizadas por meio de subpastas, as quais determinam onde os estilos, imagens, jsx, js e etc seram utilizados.
+<br/>
