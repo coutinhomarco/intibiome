@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <picture>
         <source media="(max-width: 500px)" srcSet={bannerHeroMobile} />
-        <img role="presentation" alt="Demonstration of the products available" src={bannerHero} />
+        <img role="presentation" alt="Demonstration of the products available - desktop" src={bannerHero} />
       </picture>
       <main>
         <AboutUs />
