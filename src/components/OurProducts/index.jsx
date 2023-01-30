@@ -1,7 +1,7 @@
 import React from 'react';
-import firstProduct from '../../assets/OurProducts/image mask.png';
-import secondProduct from '../../assets/OurProducts/image mask2.png';
-import thirdProduct from '../../assets/OurProducts/image mask3.png';
+import firstProduct2x from '../../assets/OurProducts/image mask@2x.png';
+import secondProduct2x from '../../assets/OurProducts/image mask2@2x.png';
+import thirdProduct2x from '../../assets/OurProducts/image mask3@2x.png';
 import './index.scss';
 
 export default function index() {
@@ -22,21 +22,21 @@ export default function index() {
       <div id="all-products" className="our-products-section">
         <section className="products-section">
           <div id="intibiome-wellness">
-            <img loading="lazy" alt="intibiome wellness daily intimate wash" src={firstProduct} />
+            <img loading="lazy" alt="intibiome wellness daily intimate wash" src={firstProduct2x} />
             <p>intibiome wellness daily intimate wash</p>
             <div id="wellness">
               <p>wellness</p>
             </div>
           </div>
           <div id="intibiome-active">
-            <img loading="lazy" alt="intibiome active extra protection intimate wash" src={secondProduct} />
+            <img loading="lazy" alt="intibiome active extra protection intimate wash" src={secondProduct2x} />
             <p>intibiome active extra protection intimate wash</p>
             <div id="active">
               <p>active</p>
             </div>
           </div>
           <div id="intibiome-agecare">
-            <img loading="lazy" alt="intibiome agecare dryness relief intimate wash" src={thirdProduct} />
+            <img loading="lazy" alt="intibiome agecare dryness relief intimate wash" src={thirdProduct2x} />
             <p>intibiome agecare dryness relief intimate wash</p>
             <div id="age-care">
               <p>age-care</p>

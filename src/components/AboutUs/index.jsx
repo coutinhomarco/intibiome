@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutUsImg from '../../assets/AboutUs/icons.png';
+import aboutUsImg2x from '../../assets/AboutUs/icons@2x.png';
 import './index.scss';
 
 export default function index() {
@@ -15,7 +15,7 @@ export default function index() {
       <p>
         We’re here to help. Providing you with the expertise, knowledge and products you need to feel confident in your personal care.
       </p>
-      <img alt="Company values: Promote, Preserve, Protect" src={aboutUsImg} />
+      <img alt="Company values: Promote, Preserve, Protect" src={aboutUsImg2x} />
     </section>
   );
 }

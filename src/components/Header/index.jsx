@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.scss';
 import { DownOutlined, SearchOutlined } from '@ant-design/icons';
 
-import headerImg from '../../assets/Header/headerImg.png';
+import headerImg from '../../assets/Header/headerImg@2x.png';
 import SandwichMenu from '../SandwichMenu';
 
 export default function Header() {
