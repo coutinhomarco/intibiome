@@ -36,7 +36,7 @@ export default function Header() {
       <main>
         <SandwichMenu />
         <img id="company-logo" alt="company logo" role="presentation" src={headerImg} />
-        <SearchOutlined style={{ color: '#7B7070' }} />
+        <SearchOutlined style={{ color: '#7B7070', cursor: 'pointer' }} />
       </main>
       <nav onMouseLeave={onLeave} className="header-navbar">
         <p onMouseEnter={onHover}>
