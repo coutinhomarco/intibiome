@@ -76,6 +76,22 @@
     }
 }
 @media screen and (max-width: 500px) {
+    #our-products-h1 {
+        font-size: 32px;
+        margin-top: 60px;
+        width: 80%;
+    }
+    .our-products {
+        h1 {
+            font-size: 32px;
+            width: 95%;
+            line-height: normal;
+        }
+        p {
+            width: 90%;
+            line-height: normal;
+        }
+    }
     .our-products-section {
         overflow-y: hidden;
         width: 100vw;
