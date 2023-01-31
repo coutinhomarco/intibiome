@@ -57,7 +57,7 @@ Escrevi alguns testes de renderização, testando se certas partes da aplicaçã
 ```bash
 # O projeto tem testes automatizados de renderização
 # Para rodar os testes
-$ npm run test
+$ npm run test:all
 ```
 <br/>
 <h2>
